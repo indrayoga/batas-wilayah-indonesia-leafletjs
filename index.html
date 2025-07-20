@@ -4,11 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Data Wilayah Indonesia</title>
   </head>
-  <body class="p-4">
-    <h1 class="text-xl font-bold mb-4">Peta Leaflet di Vite + Tailwind</h1>
-    <div id="map" class="w-full h-[500px] rounded-lg shadow-lg"></div>
+  <body class="bg-gray-100 relative">
+    <div id="map" class="w-full h-[100vh] rounded-lg shadow-lg z-0"></div>
+    <div class="absolute flex flew-row gap-2 top-5 left-20 z-50">
+      <select id="provinsi"
+        class="block px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+        <option value>Pilih Provinsi</option>
+      </select>
+      <select id="kota"
+        class="block px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+        <option value>Pilih Kabupaten/Kota</option>
+      </select>
+      <select id="kecamatan"
+        class="block px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+        <option value>Pilih Kecamatan</option>
+      </select>
+      <select id="desa"
+        class="block px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+        <option value>Pilih Desa/Kelurahan</option>
+      </select>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
