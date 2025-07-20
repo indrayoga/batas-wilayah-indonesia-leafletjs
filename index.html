@@ -7,6 +7,11 @@
     <title>Data Wilayah Indonesia</title>
   </head>
   <body class="bg-gray-100 relative">
+    <div id="loading-indicator"
+      class="fixed inset-0 flex flex-col items-center justify-center bg-white/40 px-4 py-2 border border-gray-300 rounded shadow z-50 gap-2 hidden">
+      <span>⏳</span>
+      <span>Memuat data peta...</span>
+    </div>
     <div id="map" class="w-full h-[100vh] rounded-lg shadow-lg z-0"></div>
     <div class="absolute flex flew-row gap-2 top-5 left-20 z-50">
       <select id="provinsi"
